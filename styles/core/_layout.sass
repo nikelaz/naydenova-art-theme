@@ -1,0 +1,35 @@
+// Containers  
+$container: var(--wp--style--global--content-size)
+$containerWide: var(--wp--style--global--wide-size)
+
+.is-layout-constrained
+  max-width: $container
+  margin-left: auto
+  margin-right: auto
+
+.alignwide
+  max-width: $containerWide
+  margin-left: auto
+  margin-right: auto
+
+.is-layout-constrained
+  .alignwide
+    width: calc(100vw - 40px)
+    margin-left: min(0px, max((($containerWide - $container) / -2), calc(((100vw - $container) / -2) + 20px)))
+    margin-right: min(0px, max((($containerWide - $container) / -2), calc(((100vw - $container - 20px) / -2) + 20px)))
+
+  .alignfull
+    width: 100vw
+    margin-left: min(0px, calc((100vw - $container) / -2))
+
+// Fix display in gutenberg editor
+.editor-styles-wrapper
+  .is-layout-constrained
+    .alignwide
+      width: calc(100% + 40px) !important
+      margin-left: -20px !important
+      margin-right: -20px !important
+    .alignfull
+      width: calc(100% + 80px) !important
+      margin-left: -40px !important
+      margin-right: -40px !important

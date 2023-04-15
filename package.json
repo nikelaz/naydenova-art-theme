@@ -1,0 +1,20 @@
+{
+  "name": "naydenova-art",
+  "version": "1.0.0",
+  "description": "Custom WordPress theme for naydenova.art",
+  "main": "style.css",
+  "scripts": {
+    "build:styles": "sass ./styles/style.sass ./assets/style.css",
+    "watch:styles": "sass ./styles/style.sass ./assets/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikelaz/naydenova-art-theme.git"
+  },
+  "author": "Nikola Lazarov",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/base-styles": "4.22.0",
+    "sass": "1.62.0"
+  }
+}
