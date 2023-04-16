@@ -24,15 +24,19 @@ h6, .h6
 
 // Generate headings and font size utilities
 @each $fontSize, $sizesVector in $fontSizes
-  $headingItem: nth($sizesVector, 4)
+  $headingItem: nth($sizesVector, 8)
   .fs-#{$fontSize}
     font-size: $fontSize + px
+    line-height: nth($sizesVector, 1)
     @media (max-width: 960px)
-      font-size: nth($sizesVector, 1)
-    @media (max-width: 800px)
       font-size: nth($sizesVector, 2)
+      line-height: nth($sizesVector, 3)
+    @media (max-width: 800px)
+      font-size: nth($sizesVector, 4)
+      line-height: nth($sizesVector, 5)
     @media (max-width: 590px)
-      font-size: nth($sizesVector, 3)
+      font-size: nth($sizesVector, 6)
+      line-height: nth($sizesVector, 7)
   @if $headingItem
     #{$headingItem}, .#{$headingItem}
       @extend .fs-#{$fontSize}
