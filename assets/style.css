@@ -282,6 +282,14 @@ h6, .h6 {
   display: block !important;
 }
 
+.c-secondary {
+  color: var(--wp--preset--color--foreground) !important;
+}
+
+.td-none {
+  text-decoration: none !important;
+}
+
 .wp-block-image {
   text-align: center;
 }
