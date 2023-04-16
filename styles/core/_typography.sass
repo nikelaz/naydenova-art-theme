@@ -1,37 +1,39 @@
+@import font-sizes
+
 html, body
   font-family: 'Nunito', Arial, Helvetica, sans-serif
-  font-size: 16px
+  font-size: 18px
+  line-height: 1.5
   color: var(--wp--preset--color--foreground)
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
   font-family: 'Jost', Arial, Helvetica, sans-serif
   margin-top: 0
 
-h1, .h1
-  font-size: 2.625rem
+h2, .h2, h3, .h3, h4, .h4, h5, .h5
   line-height: 1.5
-  margin-bottom: 1.688rem
+  margin-bottom: 20px
 
-h2, .h2
-  font-size: 2.063rem
-  line-height: 1.55
-  margin-bottom: 1.25rem
-
-h3, .h3
-  font-size: 1.625rem
-  line-height: 1.58
-  margin-bottom: 1.25rem
-
-h4, .h4
-  font-size: 1.25rem
-  line-height: 1.6
-  margin-bottom: 1.25rem
-
-h5, .h5
-  font-size: 1rem
-  line-height: 1.69
-  margin-bottom: 1.25rem
+h1, .h1
+  line-height: 1.5
+  margin-bottom: 30px
 
 h6, .h6
-  font-size: 0.813rem
-  line-height: 0.625rem
+  line-height: 1.1
+  margin-bottom: 10px
+
+// Generate headings and font size utilities
+@each $fontSize, $sizesVector in $fontSizes
+  $headingItem: nth($sizesVector, 4)
+  .fs-#{$fontSize}
+    font-size: $fontSize + px
+    @media (max-width: 960px)
+      font-size: nth($sizesVector, 1)
+    @media (max-width: 800px)
+      font-size: nth($sizesVector, 2)
+    @media (max-width: 590px)
+      font-size: nth($sizesVector, 3)
+  @if $headingItem
+    #{$headingItem}, .#{$headingItem}
+      @extend .fs-#{$fontSize}
+  
