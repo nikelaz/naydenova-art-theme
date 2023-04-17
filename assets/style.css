@@ -198,6 +198,7 @@ html, body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Jost", Arial, Helvetica, sans-serif;
+  font-weight: 600;
   margin-top: 0;
 }
 
@@ -213,39 +214,39 @@ h6, .h6 {
   margin-bottom: 10px;
 }
 
-.fs-47, h1, .h1 {
+.fs-47, .Post .wp-block-post-title, h1, .h1 {
   font-size: 47px;
-  line-height: 1.35;
+  line-height: 1.15;
 }
 
 .fs-42 {
   font-size: 42px;
-  line-height: 1.35;
+  line-height: 1.15;
 }
 
 .fs-37, h2, .h2 {
   font-size: 37px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .fs-29, h3, .h3 {
   font-size: 29px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .fs-23, h4, .h4 {
   font-size: 23px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .fs-18, h5, .h5 {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .fs-16, h6, .h6 {
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .is-layout-constrained, .editor-post-title__input {
@@ -348,11 +349,18 @@ h6, .h6 {
   width: 100%;
 }
 
+a:where(:not(.wp-element-button)) {
+  color: var(--wp--custom--color--primary);
+}
+
 .Post {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .Post .wp-block-post-title {
-  font-size: 48px;
+  font-weight: 500;
+}
+.Post .wp-block-post-featured-image {
+  margin-bottom: 20px;
 }
 @media (max-width: 1080px) {
   body {
@@ -363,66 +371,66 @@ h6, .h6 {
   body {
     margin: 0;
   }
-  .fs-47, h1, .h1 {
+  .fs-47, .Post .wp-block-post-title, h1, .h1 {
     font-size: 38px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-42 {
     font-size: 36px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-37, h2, .h2 {
     font-size: 34px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-29, h3, .h3 {
     font-size: 26px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-23, h4, .h4 {
     font-size: 23px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 }
 @media (max-width: 800px) {
   body {
     margin: 0;
   }
-  .fs-47, h1, .h1 {
+  .fs-47, .Post .wp-block-post-title, h1, .h1 {
     font-size: 34px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-42 {
     font-size: 32px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-37, h2, .h2 {
     font-size: 30px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-29, h3, .h3 {
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   .fs-23, h4, .h4 {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 }
 @media (max-width: 600px) {
   body {
     margin: 0;
   }
-  .fs-47, h1, .h1 {
+  .fs-47, .Post .wp-block-post-title, h1, .h1 {
     font-size: 30px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-42 {
     font-size: 29px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   .fs-37, h2, .h2 {
     font-size: 28px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }

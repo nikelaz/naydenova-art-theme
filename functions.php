@@ -16,7 +16,7 @@ if (!function_exists('naydenova_art_support')) :
 		// Enqueue editor styles.
 		add_editor_style(
 			array(
-				'/assets/style.css',
+				'/assets/style.min.css',
 			)
 		);
 
@@ -59,7 +59,7 @@ add_action('admin_init', 'naydenova_art_styles');
  * Enqueue scripts and styles.
  */
 function naydenova_art_styles() {
-	wp_enqueue_style('naydenova_art_main_stylesheet', get_template_directory_uri() . '/assets/style.css', array(), wp_get_theme()->get('Version'));
+	wp_enqueue_style('naydenova_art_main_stylesheet', get_template_directory_uri() . '/assets/style.min.css', array(), wp_get_theme()->get('Version'));
 
 	// Add the child theme CSS if it exists.
 	if (file_exists(get_stylesheet_directory() . '/assets/theme.css')) {
@@ -78,3 +78,9 @@ if (file_exists(get_stylesheet_directory() . '/inc/block-patterns.php')) {
 
 // Remove skip to content link injection with JS
 remove_action('wp_footer', 'the_block_template_skip_link');
+
+// Change the elipsis of excerpt fields
+function new_excerpt_more($more) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
