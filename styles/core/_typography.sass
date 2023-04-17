@@ -11,15 +11,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
   margin-top: 0
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5
-  line-height: 1.5
   margin-bottom: 20px
 
 h1, .h1
-  line-height: 1.5
   margin-bottom: 30px
 
 h6, .h6
-  line-height: 1.1
   margin-bottom: 10px
 
 // Generate headings and font size utilities
@@ -28,15 +25,18 @@ h6, .h6
   .fs-#{$fontSize}
     font-size: $fontSize + px
     line-height: nth($sizesVector, 1)
-    @media (max-width: 600px)
-      font-size: nth($sizesVector, 6)
-      line-height: nth($sizesVector, 7)
-    @media (max-width: 960px)
-      font-size: nth($sizesVector, 2)
-      line-height: nth($sizesVector, 3)
-    @media (max-width: 800px)
-      font-size: nth($sizesVector, 4)
-      line-height: nth($sizesVector, 5)
+    @if nth($sizesVector, 4) != ($fontSize * 1px)
+      @media (max-width: $l)
+        font-size: nth($sizesVector, 2)
+        line-height: nth($sizesVector, 3)
+    @if nth($sizesVector, 4) != nth($sizesVector, 2)
+      @media (max-width: $m)
+        font-size: nth($sizesVector, 4)
+        line-height: nth($sizesVector, 5)
+    @if nth($sizesVector, 6) != nth($sizesVector, 4)
+      @media (max-width: $s)
+        font-size: nth($sizesVector, 6)
+        line-height: nth($sizesVector, 7)
   @if $headingItem
     #{$headingItem}, .#{$headingItem}
       @extend .fs-#{$fontSize}

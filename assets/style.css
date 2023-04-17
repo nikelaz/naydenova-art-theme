@@ -202,17 +202,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  line-height: 1.5;
   margin-bottom: 20px;
 }
 
 h1, .h1 {
-  line-height: 1.5;
   margin-bottom: 30px;
 }
 
 h6, .h6 {
-  line-height: 1.1;
   margin-bottom: 10px;
 }
 
@@ -223,17 +220,17 @@ h6, .h6 {
 
 .fs-42 {
   font-size: 42px;
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 .fs-37, h2, .h2 {
   font-size: 37px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .fs-29, h3, .h3 {
   font-size: 29px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .fs-23, h4, .h4 {
@@ -246,8 +243,8 @@ h6, .h6 {
   line-height: 1.5;
 }
 
-.fs-14, h6, .h6 {
-  font-size: 14px;
+.fs-16, h6, .h6 {
+  font-size: 16px;
   line-height: 1.1;
 }
 
@@ -367,32 +364,24 @@ h6, .h6 {
     margin: 0;
   }
   .fs-47, h1, .h1 {
-    font-size: 37px;
-    line-height: 1.5;
+    font-size: 38px;
+    line-height: 1.4;
   }
   .fs-42 {
-    font-size: 39px;
-    line-height: 1.5;
+    font-size: 36px;
+    line-height: 1.4;
   }
   .fs-37, h2, .h2 {
-    font-size: 37px;
-    line-height: 1.5;
+    font-size: 34px;
+    line-height: 1.4;
   }
   .fs-29, h3, .h3 {
-    font-size: 29px;
-    line-height: 1.5;
+    font-size: 26px;
+    line-height: 1.4;
   }
   .fs-23, h4, .h4 {
     font-size: 23px;
     line-height: 1.5;
-  }
-  .fs-18, h5, .h5 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  .fs-14, h6, .h6 {
-    font-size: 14px;
-    line-height: 1.1;
   }
 }
 @media (max-width: 800px) {
@@ -400,32 +389,24 @@ h6, .h6 {
     margin: 0;
   }
   .fs-47, h1, .h1 {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 34px;
+    line-height: 1.4;
   }
   .fs-42 {
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 32px;
+    line-height: 1.4;
   }
   .fs-37, h2, .h2 {
     font-size: 30px;
-    line-height: 1.5;
+    line-height: 1.4;
   }
   .fs-29, h3, .h3 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
   }
   .fs-23, h4, .h4 {
     font-size: 20px;
     line-height: 1.5;
-  }
-  .fs-18, h5, .h5 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .fs-14, h6, .h6 {
-    font-size: 20px;
-    line-height: 1.1;
   }
 }
 @media (max-width: 600px) {
@@ -433,31 +414,15 @@ h6, .h6 {
     margin: 0;
   }
   .fs-47, h1, .h1 {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 30px;
+    line-height: 1.4;
   }
   .fs-42 {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 29px;
+    line-height: 1.4;
   }
   .fs-37, h2, .h2 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .fs-29, h3, .h3 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .fs-23, h4, .h4 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .fs-18, h5, .h5 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  .fs-14, h6, .h6 {
-    font-size: 20px;
-    line-height: 1.1;
+    font-size: 28px;
+    line-height: 1.4;
   }
 }
