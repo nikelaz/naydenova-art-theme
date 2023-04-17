@@ -301,7 +301,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "100 1000",
 							"src": [
-								"file:./assets/fonts/Jost-VariableFont.woff2"
+								"file:./assets/fonts/jost_variable.woff2"
 							]
 						}
 					]
