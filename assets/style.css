@@ -189,7 +189,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 html, body {
   font-family: "Nunito", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -219,166 +218,40 @@ h6, .h6 {
 
 .fs-47, h1, .h1 {
   font-size: 47px;
-  line-height: 1.5;
-}
-@media (max-width: 960px) {
-  .fs-47, h1, .h1 {
-    font-size: 40px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-47, h1, .h1 {
-    font-size: 30px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-47, h1, .h1 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
+  line-height: 1.35;
 }
 
 .fs-42 {
   font-size: 42px;
   line-height: 1.5;
 }
-@media (max-width: 960px) {
-  .fs-42 {
-    font-size: 39px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-42 {
-    font-size: 30px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-42 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
 
 .fs-37, h2, .h2 {
   font-size: 37px;
   line-height: 1.5;
-}
-@media (max-width: 960px) {
-  .fs-37, h2, .h2 {
-    font-size: 37px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-37, h2, .h2 {
-    font-size: 30px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-37, h2, .h2 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
 }
 
 .fs-29, h3, .h3 {
   font-size: 29px;
   line-height: 1.5;
 }
-@media (max-width: 960px) {
-  .fs-29, h3, .h3 {
-    font-size: 29px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-29, h3, .h3 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-29, h3, .h3 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
 
 .fs-23, h4, .h4 {
   font-size: 23px;
   line-height: 1.5;
-}
-@media (max-width: 960px) {
-  .fs-23, h4, .h4 {
-    font-size: 23px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-23, h4, .h4 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-23, h4, .h4 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
 }
 
 .fs-18, h5, .h5 {
   font-size: 18px;
   line-height: 1.5;
 }
-@media (max-width: 960px) {
-  .fs-18, h5, .h5 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 800px) {
-  .fs-18, h5, .h5 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 590px) {
-  .fs-18, h5, .h5 {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
 
 .fs-14, h6, .h6 {
   font-size: 14px;
   line-height: 1.1;
 }
-@media (max-width: 960px) {
-  .fs-14, h6, .h6 {
-    font-size: 14px;
-    line-height: 1.1;
-  }
-}
-@media (max-width: 800px) {
-  .fs-14, h6, .h6 {
-    font-size: 20px;
-    line-height: 1.1;
-  }
-}
-@media (max-width: 590px) {
-  .fs-14, h6, .h6 {
-    font-size: 20px;
-    line-height: 1.1;
-  }
-}
 
-.is-layout-constrained {
+.is-layout-constrained, .editor-post-title__input {
   max-width: var(--wp--style--global--content-size);
   margin-left: auto;
   margin-right: auto;
@@ -390,22 +263,22 @@ h6, .h6 {
   margin-right: auto;
 }
 
-.is-layout-constrained .alignwide {
+.is-layout-constrained .alignwide, .editor-post-title__input .alignwide {
   width: calc(100vw - 40px);
   margin-left: min(0px, max((var(--wp--style--global--wide-size) - var(--wp--style--global--content-size)) / -2, (100vw - var(--wp--style--global--content-size)) / -2 + 20px));
   margin-right: min(0px, max((var(--wp--style--global--wide-size) - var(--wp--style--global--content-size)) / -2, (100vw - var(--wp--style--global--content-size) - 20px) / -2 + 20px));
 }
-.is-layout-constrained .alignfull {
+.is-layout-constrained .alignfull, .editor-post-title__input .alignfull {
   width: 100vw;
   margin-left: min(0px, (100vw - var(--wp--style--global--content-size)) / -2);
 }
 
-.editor-styles-wrapper .is-layout-constrained .alignwide {
+.editor-styles-wrapper .is-layout-constrained .alignwide, .editor-styles-wrapper .editor-post-title__input .alignwide {
   width: calc(100% + 40px) !important;
   margin-left: -20px !important;
   margin-right: -20px !important;
 }
-.editor-styles-wrapper .is-layout-constrained .alignfull {
+.editor-styles-wrapper .is-layout-constrained .alignfull, .editor-styles-wrapper .editor-post-title__input .alignfull {
   width: calc(100% + 80px) !important;
   margin-left: -40px !important;
   margin-right: -40px !important;
@@ -484,5 +357,107 @@ h6, .h6 {
 .Post .wp-block-post-title {
   font-size: 48px;
 }
-
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 1080px) {
+  body {
+    margin: 0;
+  }
+}
+@media (max-width: 960px) {
+  body {
+    margin: 0;
+  }
+  .fs-47, h1, .h1 {
+    font-size: 37px;
+    line-height: 1.5;
+  }
+  .fs-42 {
+    font-size: 39px;
+    line-height: 1.5;
+  }
+  .fs-37, h2, .h2 {
+    font-size: 37px;
+    line-height: 1.5;
+  }
+  .fs-29, h3, .h3 {
+    font-size: 29px;
+    line-height: 1.5;
+  }
+  .fs-23, h4, .h4 {
+    font-size: 23px;
+    line-height: 1.5;
+  }
+  .fs-18, h5, .h5 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .fs-14, h6, .h6 {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  .fs-47, h1, .h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .fs-42 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .fs-37, h2, .h2 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .fs-29, h3, .h3 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-23, h4, .h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-18, h5, .h5 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-14, h6, .h6 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .fs-47, h1, .h1 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-42 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-37, h2, .h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-29, h3, .h3 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-23, h4, .h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-18, h5, .h5 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .fs-14, h6, .h6 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+}

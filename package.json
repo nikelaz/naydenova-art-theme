@@ -4,8 +4,7 @@
   "description": "Custom WordPress theme for naydenova.art",
   "main": "style.css",
   "scripts": {
-    "build:styles": "sass ./styles/style.sass ./assets/style.css",
-    "watch:styles": "sass ./styles/style.sass ./assets/style.css --watch"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -14,7 +13,13 @@
   "author": "Nikola Lazarov",
   "license": "MIT",
   "devDependencies": {
-    "@wordpress/base-styles": "4.22.0",
+    "css-mqpacker": "7.0.0",
+    "cssnano": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "5.1.0",
+    "path": "0.12.7",
     "sass": "1.62.0"
   }
 }
