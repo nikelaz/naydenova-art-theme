@@ -214,6 +214,13 @@ h6, .h6 {
   margin-bottom: 10px;
 }
 
+p {
+  margin: 0 0 20px;
+}
+p:last-of-type {
+  margin: 0;
+}
+
 .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
   font-size: 47px;
   line-height: 1.15;
@@ -286,6 +293,10 @@ h6, .h6 {
   margin-bottom: 0 !important;
 }
 
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
 .py-30, section {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
@@ -347,6 +358,12 @@ h6, .h6 {
 }
 .wp-block-separator.is-style-dots {
   width: 100%;
+}
+
+.wp-block-post-featured-image.alignwide img {
+  width: auto !important;
+  margin: 0 auto;
+  display: block;
 }
 
 a:where(:not(.wp-element-button)) {
