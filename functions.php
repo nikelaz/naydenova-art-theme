@@ -65,6 +65,9 @@ function naydenova_art_styles() {
 	if (file_exists(get_stylesheet_directory() . '/assets/theme.css')) {
 		wp_enqueue_style('naydenova_art_child_styles', get_stylesheet_directory_uri() . '/assets/theme.css', array('naydenova_art_main_stylesheet'), wp_get_theme()->get('Version'));
 	}
+
+	wp_register_script('main-js', get_template_directory_uri() . '/assets/main.min.js');
+	wp_enqueue_script( 'main-js' );
 }
 add_action('wp_enqueue_scripts', 'naydenova_art_styles');
 

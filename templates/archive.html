@@ -1,33 +1,21 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"Header py-30","theme":"naydenova_art"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"Header py-30 is-layout-constrained alignwide","theme":"naydenova_art"} /-->
 
-<!-- wp:query {"tagName":"main","layout":{"inherit":true}} -->
-<main class="wp-block-query">
-<!-- wp:query-title {"type":"archive","style":{"spacing":{"margin":{"bottom":"100px"}}}} /-->
-<!-- wp:post-template -->
-<!-- wp:group -->
-<div class="wp-block-group">
-	<!-- wp:post-title {"isLink":true} /-->
-	<!-- wp:post-featured-image {"isLink":true} /-->
-	<!-- wp:post-excerpt /-->
-	<!-- wp:template-part {"slug":"post-meta-icons","layout":{"inherit":true},"theme":"naydenova_art"} /-->
-	<!-- wp:spacer {"height":40} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
-</div>
-<!-- /wp:group -->
-<!-- /wp:post-template -->
-<!-- wp:group {"layout":{"inherit":true}} -->
-	<div class="wp-block-group">
-	<!-- wp:query-pagination -->
-		<!-- wp:query-pagination-previous /-->
+<section class="is-layout-constrained">
+	<!-- wp:query-title {"type":"archive", "className": "h3 mb-30"} /-->
 
-		<!-- wp:query-pagination-numbers /-->
+	<!-- wp:post-template {"className": "Posts"} -->
+			<!-- wp:post-title {"isLink": true} /-->
+			<!-- wp:post-featured-image {"isLink": true} /-->
+			<!-- wp:post-excerpt /-->
+	<!-- /wp:post-template -->
+</section>
 
-		<!-- wp:query-pagination-next /-->
+<section class="is-layout-constrained p-0">
+	<!-- wp:query-pagination {"className": "Pagination py-30"} -->
+		<!-- wp:query-pagination-previous {"className": "Pagination-prev Btn Btn--ghost", "label": "Previous"} /-->
+		<!-- wp:query-pagination-numbers {"className": "Pagination-numbers"} /-->
+		<!-- wp:query-pagination-next {"className": "Pagination-next Btn Btn--ghost", "label": "Next"} /-->
 	<!-- /wp:query-pagination -->
-	</div>
-	<!-- /wp:group -->
-</main>
-<!-- /wp:query -->
+</section>
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"Footer","theme":"naydenova_art"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer-container py-30 is-layout-constrained alignwide","theme":"naydenova_art"} /-->
