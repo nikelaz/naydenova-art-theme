@@ -461,11 +461,18 @@ a:where(:not(.wp-element-button)):hover {
   line-height: 1;
   text-decoration: none;
 }
+
+.Social {
+  display: flex;
+  gap: 10px;
+}
+
 @media (max-width: 1080px) {
   body {
     margin: 0;
   }
 }
+
 @media (max-width: 960px) {
   body {
     margin: 0;
@@ -491,6 +498,7 @@ a:where(:not(.wp-element-button)):hover {
     line-height: 1.15;
   }
 }
+
 @media (max-width: 800px) {
   body {
     margin: 0;
@@ -516,6 +524,7 @@ a:where(:not(.wp-element-button)):hover {
     line-height: 1.15;
   }
 }
+
 @media (max-width: 600px) {
   body {
     margin: 0;
