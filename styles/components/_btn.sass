@@ -1,0 +1,25 @@
+.Btn
+  --btn-background: var(--wp--custom--color--primary)
+  --btn-border-color: var(--wp--custom--color--primary)
+  --btn-color: #fff
+  display: inline-block
+  padding: 0.5em 1em
+  background-color: var(--btn-background)
+  border: 2px solid var(--btn-border-color)
+  outline: none
+  box-shadow: none
+  font-family: $ff-jost
+  font-weight: 500
+  font-size: 18px
+  text-decoration: none
+  color: var(--btn-color)
+  transition: opacity .2s
+
+  &:hover
+    opacity: .9
+
+.Btn--ghost
+  --btn-background: transparent
+  --btn-border-color: var(--wp--custom--color--primary)
+  --btn-color: var(--wp--custom--color--primary)
+

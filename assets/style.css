@@ -214,7 +214,7 @@ h6, .h6 {
   margin-bottom: 10px;
 }
 
-.fs-47, .Post .wp-block-post-title, h1, .h1 {
+.fs-47, .Posts li .wp-block-post-title, h1, .h1 {
   font-size: 47px;
   line-height: 1.15;
 }
@@ -351,16 +351,69 @@ h6, .h6 {
 
 a:where(:not(.wp-element-button)) {
   color: var(--wp--custom--color--primary);
+  transition: 0.2s opacity;
+}
+a:where(:not(.wp-element-button)):hover {
+  opacity: 0.9;
 }
 
-.Post {
+.Posts li:not(:last-of-type) {
   margin-bottom: 40px;
 }
-.Post .wp-block-post-title {
+.Posts li .wp-block-post-title {
   font-weight: 500;
 }
-.Post .wp-block-post-featured-image {
+.Posts li .wp-block-post-featured-image {
   margin-bottom: 20px;
+}
+
+.Btn, .Pagination .Pagination-numbers > a, .Pagination .Pagination-numbers > span {
+  --btn-background: var(--wp--custom--color--primary);
+  --btn-border-color: var(--wp--custom--color--primary);
+  --btn-color: #fff;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: var(--btn-background);
+  border: 2px solid var(--btn-border-color);
+  outline: none;
+  box-shadow: none;
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--btn-color);
+  transition: opacity 0.2s;
+}
+.Btn:hover, .Pagination .Pagination-numbers > a:hover, .Pagination .Pagination-numbers > span:hover {
+  opacity: 0.9;
+}
+
+.Btn--ghost, .Pagination .Pagination-numbers > a, .Pagination .Pagination-numbers > span {
+  --btn-background: transparent;
+  --btn-border-color: var(--wp--custom--color--primary);
+  --btn-color: var(--wp--custom--color--primary);
+}
+
+.Pagination {
+  display: flex;
+  gap: 10px;
+}
+.Pagination .Pagination-prev,
+.Pagination .Pagination-next {
+  margin: 0 !important;
+}
+.Pagination .Pagination-numbers {
+  display: flex;
+  gap: 10px;
+  margin: 0 !important;
+}
+.Pagination .Pagination-numbers > span {
+  cursor: default;
+  --btn-border-color: var(--wp--custom--color--foreground);
+  --btn-color: var(--wp--custom--color--foreground);
+}
+.Pagination .Pagination-numbers > span:hover {
+  opacity: 1;
 }
 @media (max-width: 1080px) {
   body {
@@ -371,7 +424,7 @@ a:where(:not(.wp-element-button)) {
   body {
     margin: 0;
   }
-  .fs-47, .Post .wp-block-post-title, h1, .h1 {
+  .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 38px;
     line-height: 1.2;
   }
@@ -396,7 +449,7 @@ a:where(:not(.wp-element-button)) {
   body {
     margin: 0;
   }
-  .fs-47, .Post .wp-block-post-title, h1, .h1 {
+  .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 34px;
     line-height: 1.2;
   }
@@ -421,7 +474,7 @@ a:where(:not(.wp-element-button)) {
   body {
     margin: 0;
   }
-  .fs-47, .Post .wp-block-post-title, h1, .h1 {
+  .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 30px;
     line-height: 1.2;
   }

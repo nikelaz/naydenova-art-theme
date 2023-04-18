@@ -1,0 +1,23 @@
+.Pagination
+  display: flex
+  gap: 10px
+
+  .Pagination-prev,
+  .Pagination-next
+    margin: 0 !important
+
+  .Pagination-numbers
+    display: flex
+    gap: 10px
+    margin: 0 !important
+
+    > a, > span
+      @extend .Btn
+      @extend .Btn--ghost
+    
+    > span
+      cursor: default
+      --btn-border-color: var(--wp--custom--color--foreground)
+      --btn-color: var(--wp--custom--color--foreground)
+      &:hover
+        opacity: 1
