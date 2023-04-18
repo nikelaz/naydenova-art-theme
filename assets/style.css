@@ -251,7 +251,7 @@ p:last-of-type {
   line-height: 1.15;
 }
 
-.fs-16, h6, .h6 {
+.fs-16, .CommentProfile-username, h6, .h6 {
   font-size: 16px;
   line-height: 1.15;
 }
@@ -293,7 +293,7 @@ p:last-of-type {
   margin-bottom: 0 !important;
 }
 
-.mb-30 {
+.mb-30, .comment-form {
   margin-bottom: 30px !important;
 }
 
@@ -400,6 +400,8 @@ a:where(:not(.wp-element-button)):hover {
   text-decoration: none;
   color: var(--btn-color);
   transition: opacity 0.2s;
+  border-radius: 2px;
+  line-height: 1;
 }
 .Btn:hover, .Pagination .Pagination-numbers > a:hover, .Pagination .Pagination-numbers > span:hover {
   opacity: 0.9;
@@ -431,6 +433,29 @@ a:where(:not(.wp-element-button)):hover {
 }
 .Pagination .Pagination-numbers > span:hover {
   opacity: 1;
+}
+
+.CommentProfile-avatarRow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.CommentProfile-avatar {
+  border-radius: 50%;
+}
+.CommentProfile-username {
+  text-decoration: none;
+  line-height: 1;
+  margin-bottom: 4px;
+  color: var(--wp--custom--color--foreground);
+}
+.CommentProfile-secondary {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
 }
 @media (max-width: 1080px) {
   body {

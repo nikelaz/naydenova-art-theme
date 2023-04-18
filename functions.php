@@ -84,3 +84,23 @@ function new_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('comment_form_logged_in', function( $logged_in_as, $commenter, $user_identity) {
+  return sprintf(
+		'<p class="CommentProfile">%s</p>',
+		sprintf(
+				__('<div class="CommentProfile-avatarRow"><img width="40" height="40" src="http://2.gravatar.com/avatar/28c37fbdafc205b92859ddbe02cf3878?s=40&d=mm&r=g" class="CommentProfile-avatar" loading="lazy" /> <div class="CommentProfile-usernameLogout"><a class="CommentProfile-username d-block" href="%1$s" aria-label="%2$s">%3$s</a><a class="CommentProfile-secondary d-block" href="%4$s">Излизане</a></div></div>'),
+				get_edit_user_link(),
+				esc_attr(sprintf(__('В момента коментирате, използвайки вашия профил: %s. Настройки на профила.'), $user_identity)),
+				$user_identity,
+				wp_logout_url(apply_filters('the_permalink', get_permalink(get_the_ID()), get_the_ID()))
+		)
+);
+}, 10, 3 );
+
+add_filter('comment_form_default_fields', 'website_remove');
+function website_remove($fields) {
+	if(isset($fields['url']))
+	unset($fields['url']);
+	return $fields;
+}

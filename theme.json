@@ -65,53 +65,41 @@
 			"button": {
 				"border": {
 					"color": "var(--wp--custom--color--primary)",
-					"radius": "4px",
+					"radius": "2px",
 					"style": "solid",
 					"width": "2px"
 				},
 				"color": {
 					"background": "var(--wp--custom--color--primary)",
-					"text": "var(--wp--custom--color--background)"
+					"text": "#fff"
 				},
 				"hover": {
-					"border": {
-						"color": "var(--wp--custom--color--secondary)"
-					},
-					"color": {
-						"background": "var(--wp--custom--color--secondary)",
-						"text": "var(--wp--custom--color--background)"
-					}
+					"opacity": "0.9"
 				},
 				"outline": {
 					"border": {
 						"color": "var(--wp--custom--color--primary)"
 					},
 					"color": {
-						"background": "var(--wp--custom--color--background)",
+						"background": "transparent",
 						"text": "var(--wp--custom--color--primary)"
 					},
 					"hover": {
-						"border": {
-							"color": "var(--wp--custom--color--primary)"
-						},
-						"color": {
-							"background": "var(--wp--custom--color--secondary)",
-							"text": "var(--wp--custom--color--background)"
-						}
+						"opacity": "0.9"
 					}
 				},
 				"spacing": {
 					"padding": {
-						"bottom": "0.667em",
-						"left": "1.333em",
-						"right": "1.333em",
-						"top": "0.667em"
+						"bottom": "0.5em",
+						"left": "1em",
+						"right": "1em",
+						"top": "0.5em"
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--custom--font-sizes--normal)",
-					"fontWeight": "normal",
-					"lineHeight": 2
+					"fontSize": "18px",
+					"fontWeight": "500",
+					"lineHeight": "1"
 				}
 			},
 			"color": {
@@ -436,10 +424,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"bottom": "calc( var(--wp--custom--button--spacing--padding--bottom) + var(--wp--custom--button--border--width) )",
-						"left": "calc( var(--wp--custom--button--spacing--padding--left) + var(--wp--custom--button--border--width) )",
-						"right": "calc( var(--wp--custom--button--spacing--padding--right) + var(--wp--custom--button--border--width) )",
-						"top": "calc( var(--wp--custom--button--spacing--padding--top) + var(--wp--custom--button--border--width) )"
+						"bottom": "var(--wp--custom--button--spacing--padding--bottom)",
+						"left": "var(--wp--custom--button--spacing--padding--left)",
+						"right": "var(--wp--custom--button--spacing--padding--right)",
+						"top": "var(--wp--custom--button--spacing--padding--top)"
 					}
 				},
 				"typography": {
