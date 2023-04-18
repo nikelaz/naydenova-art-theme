@@ -233,27 +233,27 @@ p:last-of-type {
 
 .fs-37, h2, .h2 {
   font-size: 37px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .fs-29, h3, .h3 {
   font-size: 29px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .fs-23, h4, .h4 {
   font-size: 23px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .fs-18, h5, .h5 {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .fs-16, h6, .h6 {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .is-layout-constrained, .editor-post-title__input {
@@ -443,23 +443,23 @@ a:where(:not(.wp-element-button)):hover {
   }
   .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 38px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-42 {
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-37, h2, .h2 {
     font-size: 34px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-29, h3, .h3 {
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-23, h4, .h4 {
     font-size: 23px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
 @media (max-width: 800px) {
@@ -468,23 +468,23 @@ a:where(:not(.wp-element-button)):hover {
   }
   .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 34px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-42 {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-37, h2, .h2 {
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-29, h3, .h3 {
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-23, h4, .h4 {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
 @media (max-width: 600px) {
@@ -493,14 +493,14 @@ a:where(:not(.wp-element-button)):hover {
   }
   .fs-47, .Posts li .wp-block-post-title, h1, .h1 {
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-42 {
     font-size: 29px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
   .fs-37, h2, .h2 {
     font-size: 28px;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
