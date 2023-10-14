@@ -1,7 +1,7 @@
 {
   "name": "naydenova-art",
   "version": "1.0.0",
-  "description": "Custom WordPress theme for naydenova.art",
+  "description": "Custom WordPress theme for naydenova.studio",
   "main": "style.css",
   "scripts": {
     "build": "gulp"

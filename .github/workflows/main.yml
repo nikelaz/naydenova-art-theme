@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.naydenova.art
-        username: deploy@naydenova.art
+        server: ftp.naydenova.studio
+        username: deploy@naydenova.studio
         password: ${{secrets.ftp_password}}
