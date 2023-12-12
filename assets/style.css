@@ -467,6 +467,13 @@ a:where(:not(.wp-element-button)):hover {
   gap: 10px;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 @media (max-width: 1080px) {
   body {
     margin: 0;
